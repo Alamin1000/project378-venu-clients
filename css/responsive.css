@@ -193,11 +193,199 @@
     .container:not(.container-f) {
         padding: 0 15px;
     }
+
+    .hero__image {
+        width: 80%;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin: 0 auto;
+    }
+    .hero__image .img-main {
+        width: 100%;
+        margin-left: -10%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .hero-section {
+        padding: 140px 0 50px;
+    }
+
+    .brands-wrapper {
+        --bs-gutter-x: 20px;
+    }
+    .brand-single .image {
+        height: 33px;
+    }
+
+    .process__image {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .process__image .shad-img {
+        width: 100%;
+        margin: 0;
+        max-width: unset;
+    }
+    .process-content {
+        padding-right: 0%;
+    }
+    .process-content p {
+        padding-right: 0;
+    }
+
+    .testimonial-wrapper {
+        --bs-gutter-x: 50px;
+    }
+
+
+    .footer__lc-blue-box::before {
+        display: none;
+    }
+    .fs-menu li a {
+        color: var(--theme__color1);
+    }
+    .fs-menu {
+        margin-left: 0;
+    }
+
+    .footer__logo-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__lc-blue-box {
+        margin-right: 0;
+        padding-top: 0;
+    }
+
+    .footer-menu {
+        text-align: center;
+    }
+    .footer-top__msd {
+        margin-top: 20px;
+    }
+    .footer-payment {
+        width: 250px;
+        margin: 0 auto;
+    }
+    .payment-methods {
+        gap: 18px;
+    }
+    .footer-payment h3 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .footer-bottom {
+        padding: 0px 0 30px 0px;
+    }
+    .footer-top {
+        padding: 50px 0 15px;
+    }
+    .copyright {
+        font-size: 13px;
+    }
+
 }
 
 
 @media (max-width: 768px) {
- 
+    .header-logo {
+        width: 100px;
+    }
+    .header-in {
+        padding: 20px 0;
+    }
+    .hero-section {
+        padding: 90px 0 30px;
+    }
+    .hero-content .h1 {
+        font-size: 26px;
+        margin-bottom: 15px;
+        letter-spacing: -0.3px;
+    }
+    .hero-content h4 {
+        font-size: 17px;
+        margin-bottom: 20px;
+        letter-spacing: -0.5px;
+    }
+
+    .brand-single .image {
+        height: 22px;
+    }
+
+
+    .h3 {
+        font-size: 18px;
+    }
+    .sec-title {
+        margin-bottom: 32px;
+    }
+    .brands-section {
+        padding: 40px 0 60px;
+    }
+    .h2-650 {
+        font-size: 25px;
+        margin-bottom: 18px;
+        letter-spacing: -0.4px;
+    }
+    .h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .default-button {
+        min-height: 43px;
+        padding: 6px 30px;
+        font-size: 13px;
+    }
+    .default-button--min-w {
+        font-size: 16px;
+        min-width: 190px;
+    }
+    .offers-section__bottom {
+        margin-top: 45px;
+    }
+    .offer-section {
+        padding: 40px 0 50px;
+    }
+
+    .testimonial-card__title__content h3 {
+        font-size: 14px;
+        margin: 0 0 4px;
+    }
+    .rating ul li {
+        font-size: 12px;
+    }
+    .rating ul {
+        gap: 3px;
+    }
+    .rating h4 {
+        font-size: 12px;
+    }
+    .rating {
+        gap: 8px;
+    }
+    .testimonial-card__title__image {
+        height: 47px;
+        width: 47px;
+    }
+    .testimonial-card__title {
+        gap: 9px;
+        margin-bottom: 8px;
+    }
+    .testimonial-card__body p {
+        font-size: 13px;
+    }
+    .testimonial-section {
+        padding: 50px 0 50px;
+    }
+    .testimonial-m-button {
+        width: 30px;
+    }
+
 }
 
 
@@ -206,6 +394,17 @@
 }
 
 
-@media (max-width: 390px) {
- 
+@media (max-width: 370px) {
+    .hero-content .h1 {
+        font-size: 23px;
+    }
+    .h2 {
+        font-size: 18px;
+    }
+    .h2-650 {
+        font-size: 23px;
+    }
+    .sec-title {
+        margin-bottom: 27px;
+    }
 }
