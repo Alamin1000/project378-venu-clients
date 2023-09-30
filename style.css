@@ -213,19 +213,22 @@ p:last-child{
 .offcanvas-open {
   font-size: 22px;
   transition: 0.3s;
+  color: var(--theme__color1);
 }
 .offcanvas-open:hover {
-  color: #97A3AE;
+  color: var(--theme__color1);
 }
 .offcanvas-close {
   color: var(--theme__color1);
   position: absolute;
   transition: 0.3s;
-  right: 25px;
-  top: 25px;
+  right: 15px;
+  top: 15px;
+  font-size: 22px;
+  line-height: 1;
 }
 .offcanvas-close:hover {
-  color: #97A3AE;
+  color: var(--theme__color2);
 }
 .offcanvas-menu {
   position: fixed;
@@ -245,7 +248,7 @@ p:last-child{
   min-width: 200px;
   z-index: 5;
   position: relative;
-  background: #d5dce2;
+  background: #fff;
   height: 100%;
   padding: 50px 20px 40px;
   overflow: auto;
@@ -255,12 +258,13 @@ p:last-child{
 .offcanvas-menu .offmenu :-webkit-scrollbar {
   display: none;
 }
-.offcanvas-menu ul li a {
+.mobile-menu li a {
   display: block;
   text-align: center;
   font-size: 16px;
   color: var(--theme__color1);
   padding: 10px;
+  font-weight: 500;
 }
 .offcanvas-overlay {
   position: fixed;
@@ -568,17 +572,42 @@ p:last-child{
 /* ---footer-section--- */
 .footer-section {
   background: #F4F8FF;
+  overflow: hidden;
 }
 .footer-section__inner {
 
 }
 
+.footer__lc-blue-box {
+  position: relative;
+  z-index: 10;
+  margin-right: 75px;
+  padding-top: 42px;
+}
+.footer__lc-blue-box::before {
+  content: '';
+  height: 1000px;
+  width: 3000px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--theme__color1);
+  color: #fff;
+  z-index: -1;
+}
+
 .footer-top {
-  padding: 78px 0 42px;
+	padding: 60px 0 100px;
 }
 .footer-top__row {
 
 }
+
+.footer-top__msd {
+  margin-top: 82px;
+}
+
 .footer__logo-column {
 
 }
@@ -587,15 +616,16 @@ p:last-child{
   color: #626A7D;
 }
 .footer-logo {
-  margin-bottom: 17px;
-  width: 212px;
-  display: block;
+	margin-bottom: 25px;
+	width: 212px;
+	display: block;
 }
 .footer-logo img {
 
 }
 .fs-menu {
   gap: 15px;
+  margin-left: 45px;
   display: flex;
 }
 .fs-menu li {
@@ -603,7 +633,7 @@ p:last-child{
 }
 .fs-menu li a {
   font-size: 20px;
-  color: var(--theme__color1);
+  color: #fff;
   transition: 0.3s;
 }
 .fs-menu li a:hover {
@@ -617,7 +647,7 @@ p:last-child{
   font-size: 21px;
   margin-bottom: 20px;
   font-weight: 700;
-  color: var(--theme__color1);
+  color: var(--theme__color2);
   font-family: var(--manrope);
 }
 .footer-menu p {
@@ -635,44 +665,40 @@ p:last-child{
 .footer-menu ul li a {
   font-size: 16px;
   font-weight: 500;
-  color: #181433;
+  color: var(--theme__color1);
+  transition: 0.3s;
 }
 .footer-menu ul li a:hover {
   color: var(--theme__color2);
 }
 
-.footer-newsletter {
-  margin-bottom: 20px;
-  position: relative;
+.footer-payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.footer-newsletter .input {
-  font-size: 20px;
-  padding: 15px 30px;
-  padding-right: 130px;
-  width: 100%;
-  border-radius: 50px;
-  border: 1px solid rgba(34, 116, 255, 0.20);
-  background: #FFF;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.4);
-  line-height: 1.5;
+.footer-payment h3 {
+  font-size: 36px;
+  margin-bottom: 26px;
+  color: #222177;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.08px;
 }
-.footer-newsletter .submit {
-  padding-left: 22px;
-  padding-right: 22px;
-  background: var(--theme__color1);
-  color: #fff;
-  border-color: transparent;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: max-content;
-  font-weight: 700;
+.payment-methods {
+  gap: 34px;
+  display: flex;
+}
+.payment-method-single {
+
+}
+.payment-method-single .img {
+
 }
 
 .footer-bottom {
-  padding: 40px 0 55px;
-  border-top: 2px solid rgba(34, 115, 255, 0.1);
+  padding: 0px 0 40px 130px;
 }
 .copyright {
   font-size: 16px;
@@ -759,8 +785,14 @@ p:last-child{
 }
 
 
+.testimonial-section__bottom {
+  margin-top: 70px;
+}
 .testimonial-m-button {
-  font-size: 50px;
-  color: var(--theme__color2);
+  width: 63px;
+  transition: 0.3s;
+}
+.testimonial-m-button:hover {
+  filter: brightness(180%);
 }
 /* ---testimonial-section---end */

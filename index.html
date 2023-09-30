@@ -28,29 +28,15 @@
     <div class="main-wrap">
       <!-- offcanvas-start -->
       <div class="offcanvas-menu">
-        <ul class="offmenu" id="menuParent">
-          <a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown">
-            <a href="#" data-bs-toggle="collapse" data-bs-target="#drop-menu1"
-              >OUR HORSES</a
-            >
-            <div
-              class="dropdown-menu-custom collapse"
-              id="drop-menu1"
-              data-bs-parent="#menuParent"
-            >
-              <ul>
-                <li><a href="#">YEARLINGS</a></li>
-                <li><a href="#">2 YEAR OLDS</a></li>
-                <li><a href="#">3 YEAR OLD PLUS</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">LATEST NEWS</a></li>
-          <li><a href="#">CONTACT & FIND US</a></li>
-        </ul>
+        <div class="offmenu" id="menuParent">
+          <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+          <ul class="mobile-menu">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Client Support</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
       <div class="offcanvas-overlay"></div>
       <!-- offcanvas-start-end -->
@@ -63,7 +49,7 @@
               <a href="index.html" class="header-logo">
                 <img src="images/logo.svg" alt="" />
               </a>
-              <div class="main-menu mx-auto">
+              <div class="main-menu mx-auto d-lg-block d-none">
                 <ul>
                   <li><a class="active" href="#">Home</a></li>
                   <li><a href="#">Client Support</a></li>
@@ -71,6 +57,9 @@
                   <li><a href="#">Contact</a></li>
                 </ul>
               </div>
+              <a href="#" class="d-lg-none offcanvas-open">
+                <i class="far fa-bars"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -341,9 +330,11 @@
               </div>
               <!-- testimonials-wrapper-en -->
 
-              <div class="d-flex justify-content-center">
+              <div
+                class="d-flex justify-content-center testimonial-section__bottom"
+              >
                 <a href="#" class="testimonial-m-button">
-                  <i class="far fa-chevron-down"></i>
+                  <img src="images/chevron-down-bold.svg" alt="" />
                 </a>
               </div>
             </div>
@@ -362,32 +353,34 @@
             <!-- footer-top -->
             <div class="footer-top">
               <div class="footer-top__row row">
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                   <div class="footer__logo-column">
                     <a href="index.html" class="footer-logo">
                       <img src="images/logo-2.svg" alt="" />
                     </a>
-                    <ul class="fs-menu">
-                      <li>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><i class="fab fa-facebook-messenger"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fas fa-infinity"></i></a>
-                      </li>
-                    </ul>
+                    <div class="footer__lc-blue-box">
+                      <ul class="fs-menu">
+                        <li>
+                          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fab fa-facebook-messenger"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fas fa-infinity"></i></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-8 footer-top__msd">
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-5">
                       <div class="row">
                         <div class="col-6">
                           <div class="footer-menu">
@@ -402,7 +395,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-7">
                       <div class="footer-payment">
                         <h3>Payment Methods</h3>
                         <div class="payment-methods">
